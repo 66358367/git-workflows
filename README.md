@@ -1,2 +1,2 @@
-# git-workflows
-Project for subject JEM224
+# Version Control with Git (JEM234) - Git-Workflows
+Martin Vondrášek, Marek Daňa
