@@ -2,7 +2,8 @@
 By Martin Vondrášek, Marek Daňa, Vladyslav Ovcharenko
 # Git Workflows
 
-## Table of Contents
+
+📑 ## Table of Contents
 - [Introduction](#introduction)
 - [Branching Strategy](#branching-strategy)
 - [Workflow Types](#workflow-types)
@@ -63,6 +64,13 @@ The GitHub Flow is a lightweight workflow designed for teams using GitHub. It si
 - [Git Cheat Sheet](https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf): A handy reference for common Git commands.
 - [Atlassian Git Workflow](https://www.atlassian.com/git): Learn about Git workflows and branching strategies.
 
--
--
+=======
+
+## Contributing
+We welcome contributions from the community. In this section, you can explain how others can contribute to the project, such as by reporting issues or submitting pull requests.
+
+## Summary
+
+## Sources
+Specify the project's licensing information. You can include the full license text or provide a brief summary.
 
