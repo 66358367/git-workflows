@@ -15,42 +15,40 @@ By Martin Vondrášek, Marek Daňa, Vladyslav Ovcharenko
 - [Tools and Resources](#tools-and-resources)
 
 ## Introduction
-Git workflows define the processes and conventions your team follows when using Git for version control. A well-defined workflow helps maintain code quality, collaboration, and project organization. This document outlines common Git workflows and best practices for effective version control in our project.
+Git workflows define the processes and conventions one should follow when using Git for version control of project development. A well-defined workflow helps maintain code quality, collaboration, and project organization. This wiki-like project outlines common Git workflows and best practices for effective version control in projects.
 
-## Branching Strategy
-A branching strategy is the foundation of any Git workflow. It defines how branches are created, named, and merged. Our project follows the [choose one: centralized/decentralized] branching strategy. This strategy includes the following main branches:
+## Branching Strategy in Git Workflows
+A branching strategy in Git refers to the systematic approach used to create, manage, and merge branches within a Git repository. It plays a pivotal role in Git workflows, as it establishes rules and guidelines for branching and helps manage code changes effectively. A well-defined branching strategy provides structure and organization to the development process, enhancing collaboration, isolating code changes, facilitating code review, and supporting version control and release management. It ensures that development teams can efficiently manage code changes, maintain code quality, and deliver reliable software products.
 
-- **Main**: The main branch, also known as `master` or `mainline`, represents the production-ready code.
-- **Develop**: The develop branch serves as the integration branch for ongoing work.
-- [Other Branches]: Describe any other important branches specific to your project.
+## Common Git Workflows
 
-## Workflow Types
-There are several Git workflows commonly used in software development. Choose the one that best fits your project's needs or create a custom workflow.
+### 1. Centralized Workflow
+The Centralized Workflow is a straightforward and linear approach to version control. In this workflow, all developers collaborate on a single branch, typically named "master" or "main." They commit their changes directly to this main branch. While it simplifies project management, this workflow can become complex when multiple developers concurrently work on diverse features or bug fixes. The Centralized Workflow is best suited for smaller teams and projects with minimal complexity, where direct coordination is efficient and conflicts are infrequent.
 
-### Feature Branch Workflow
-The feature branch workflow is simple and well-suited for smaller teams or projects. It involves creating a new branch for each feature or bug fix.
+### 2. Feature Branch Workflow
+The Feature Branch Workflow is a structured approach that encourages developers to create dedicated branches for each new feature, bug fix, or enhancement they work on. Instead of committing directly to the main branch, developers branch off from it to create feature branches. These branches isolate specific changes and facilitate parallel development efforts. After completing their work, developers merge their feature branches back into the main branch. This workflow is highly valuable for medium to large teams, where it promotes a structured development process, minimizes conflicts, and ensures comprehensive testing before integration.
 
-**Steps:**
-1. Create a new branch for each feature or bug fix.
-2. Develop and test the feature in the branch.
-3. Merge the feature branch into the `develop` branch when complete.
+### 3. Gitflow Workflow
+The Gitflow Workflow introduces a comprehensive branching model with distinct branch types, including master, develop, feature, release, and hotfix branches. The master branch represents the stable production version, while the develop branch serves as the ongoing development branch. Feature branches are used for the development of new features, release branches manage versioned releases, and hotfix branches address critical issues. This structured approach is ideal for projects with regular releases, as it enables efficient version management and supports concurrent feature development.
 
-### Gitflow Workflow
-The Gitflow workflow is a more complex strategy suitable for larger teams and projects. It defines specific branches for features, releases, and hotfixes.
+### 4. Forking Workflow
+The Forking Workflow is commonly employed in open-source projects, where contributors do not have direct write access to the primary repository. Contributors create forks of the central repository, each having its own copy of the codebase. They make changes in their forks and then submit pull requests to propose these changes for integration into the main repository. This approach enables project maintainers to review contributions, ensuring that changes are thoroughly tested and meet quality standards. The Forking Workflow promotes collaboration among a diverse range of contributors, making it an excellent choice for open-source projects.
 
-**Branches in Gitflow:**
-- **Feature Branches**: For developing new features.
-- **Release Branches**: For preparing releases.
-- **Hotfix Branches**: For addressing critical issues in production.
+### 5. Release-Based Workflow
+The Release-Based Workflow prioritizes structured versioning and organized releases. In this workflow, development takes place in feature branches, where new features and enhancements are implemented and tested. Once a set of features is ready for release, a release branch is created. The release branch undergoes additional testing and fine-tuning before merging it into the main branch and tagging it with a version number. This workflow is particularly valuable for projects with strict version control requirements, ensuring precise versioning and reliable release management.
 
-### GitHub Flow
-The GitHub Flow is a lightweight workflow designed for teams using GitHub. It simplifies collaboration by focusing on pull requests.
+### 6. GitOps Workflow
+The GitOps Workflow extends Git's capabilities to encompass infrastructure and application delivery. Infrastructure and application configuration are stored in version-controlled repositories, and changes are tracked in Git. Continuous Integration/Continuous Deployment (CI/CD) pipelines automate the application of these changes to the production environment. This approach promotes collaboration between development and operations teams, advocates for infrastructure as code (IaC), and ensures that infrastructure changes are versioned, reviewed, and automated. GitOps is a valuable choice for DevOps teams looking to streamline infrastructure management and maintain consistency in application delivery.
 
-**Steps in GitHub Flow:**
-1. Create a feature branch.
-2. Commit changes and open a pull request.
-3. Discuss and review the pull request.
-4. Merge the pull request into the `main` branch.
+## Collaborative Git Workflows
+
+### 1. Distributed Teams
+- **Strategies**: Effective collaboration in distributed teams involves frequent communication, asynchronous coordination, and consideration of time zone differences.
+- **Tools**: Collaboration tools like Slack, video conferencing, and project management software foster seamless remote collaboration.
+
+### 2. Code Review Process
+- **Setup**: Establish a robust code review process using Pull Requests (PRs) or Merge Requests (MRs) to ensure high code quality.
+- **Best Practices**: Follow code review best practices such as setting guidelines, providing constructive feedback, and conducting thorough reviews.
 
 ## Best Practices
 - Commit regularly with meaningful messages.
