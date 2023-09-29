@@ -17,12 +17,8 @@ By Martin Vondrášek, Marek Daňa, Vladyslav Ovcharenko
 ## Introduction
 Git workflows define the processes and conventions one should follow when using Git for version control of project development. A well-defined workflow helps maintain code quality, collaboration, and project organization. This wiki-like project outlines common Git workflows and best practices for effective version control in projects.
 
-## Branching Strategy
-A branching strategy is the foundation of any Git workflow. It defines how branches are created, named, and merged. Our project follows the [choose one: centralized/decentralized] branching strategy. This strategy includes the following main branches:
-
-- **Main**: The main branch, also known as `master` or `mainline`, represents the production-ready code.
-- **Develop**: The develop branch serves as the integration branch for ongoing work.
-- [Other Branches]: Describe any other important branches specific to your project.
+## Branching Strategy in Git Workflows
+A branching strategy in Git refers to the systematic approach used to create, manage, and merge branches within a Git repository. It plays a pivotal role in Git workflows, as it establishes rules and guidelines for branching and helps manage code changes effectively. A well-defined branching strategy provides structure and organization to the development process, enhancing collaboration, isolating code changes, facilitating code review, and supporting version control and release management. It ensures that development teams can efficiently manage code changes, maintain code quality, and deliver reliable software products.
 
 ## Common Git Workflows
 
@@ -44,7 +40,6 @@ The Release-Based Workflow prioritizes structured versioning and organized relea
 ### 6. GitOps Workflow
 The GitOps Workflow extends Git's capabilities to encompass infrastructure and application delivery. Infrastructure and application configuration are stored in version-controlled repositories, and changes are tracked in Git. Continuous Integration/Continuous Deployment (CI/CD) pipelines automate the application of these changes to the production environment. This approach promotes collaboration between development and operations teams, advocates for infrastructure as code (IaC), and ensures that infrastructure changes are versioned, reviewed, and automated. GitOps is a valuable choice for DevOps teams looking to streamline infrastructure management and maintain consistency in application delivery.
 
-
 ## Collaborative Git Workflows
 
 ### 1. Distributed Teams
@@ -54,7 +49,6 @@ The GitOps Workflow extends Git's capabilities to encompass infrastructure and a
 ### 2. Code Review Process
 - **Setup**: Establish a robust code review process using Pull Requests (PRs) or Merge Requests (MRs) to ensure high code quality.
 - **Best Practices**: Follow code review best practices such as setting guidelines, providing constructive feedback, and conducting thorough reviews.
-
 
 ## Best Practices
 - Commit regularly with meaningful messages.
