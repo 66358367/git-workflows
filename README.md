@@ -3,7 +3,7 @@ By Martin Vondrášek, Marek Daňa, Vladyslav Ovcharenko
 # Git Workflows
 
 
-##📑 Table of Contents
+## 📑 Table of Contents
 - [Introduction](#introduction)
 - [Branching Strategy](#branching-strategy)
 - [Workflow Types](#workflow-types)
