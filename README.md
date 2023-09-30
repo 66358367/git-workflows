@@ -5,20 +5,20 @@ By Martin Vondrášek, Marek Daňa, Vladyslav Ovcharenko
 
 ## 📑 Table of Contents
 - [Introduction](#-introduction)
-- [Branching Strategy](#-branching-strategy)
-- [Workflow Types](#workflow-types)
-  - [Centralized]()
-  - [Feature Branch](#feature-branch-workflow)
-  - [Gitflow ](#gitflow-workflow)
-  - [Forking]()
-  - [Release-based]()
-  - [GitOps]()
-- [Collaborative workflows]()
-  - [Distributed teams]()
-  - [Code-reviw process]()
+- [Branching Strategy](#-branching-strategy-in-git-workflows)
+- [Workflow Types](#-common-git-workflows)
+  - [Centralized](#1-centralized-workflow)
+  - [Feature Branch](#2-feature-branch-workflow)
+  - [Gitflow ](#3-gitflow-workflow)
+  - [Forking](#4-forking-workflow)
+  - [Release-based](#5-release-based-workflow)
+  - [GitOps](#6-gitops-workflow)
+- [Collaborative workflows](#-collaborative-git-workflows)
+  - [Distributed teams](#1-distributed-teams)
+  - [Code-reviw process](#2-code-review-process)
 - [Best Practices](#best-practices)
-- [Summary](#summary)
-- [Tools and Resources](#tools-and-resources)
+- [Summary](#-summary)
+- [Tools and Resources](#%EF%B8%8F-tools-and-resources)
 
 ## 🔍 Introduction
 Git workflows define the processes and conventions one should follow when using Git for version control of project development. A well-defined workflow helps maintain code quality, collaboration, and project organization. This wiki-like project outlines common Git workflows and best practices for effective version control in projects.
