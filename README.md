@@ -4,12 +4,18 @@ By Martin Vondrášek, Marek Daňa, Vladyslav Ovcharenko
 
 
 ## 📑 Table of Contents
-- [Introduction](#introduction)
-- [Branching Strategy](#branching-strategy)
+- [Introduction](#-introduction)
+- [Branching Strategy](#-branching-strategy)
 - [Workflow Types](#workflow-types)
-  - [Feature Branch Workflow](#feature-branch-workflow)
-  - [Gitflow Workflow](#gitflow-workflow)
-  - [GitHub Flow](#github-flow)
+  - [Centralized]()
+  - [Feature Branch](#feature-branch-workflow)
+  - [Gitflow ](#gitflow-workflow)
+  - [Forking]()
+  - [Release-based]()
+  - [GitOps]()
+- [Collaborative workflows]()
+  - [Distributed teams]()
+  - [Code-reviw process]()
 - [Best Practices](#best-practices)
 - [Summary](#summary)
 - [Tools and Resources](#tools-and-resources)
